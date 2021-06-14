@@ -1,0 +1,17 @@
+{
+    "trashAssetsBeforeRuns": true,
+    "video": true,
+    "reporter": "junit",
+    "reporterOptions": {
+        "mochaFile": "results/test-[hash].xml",
+        "toConsole": false,
+        "testCaseSwitchClassnameAndName": false
+    },
+    "env": {
+        "THROUGH_API_GATEWAY": false
+        
+    },
+    "chromeWebSecurity": false,
+	"viewportWidth": 1900,
+	"viewportHeight": 1000
+}

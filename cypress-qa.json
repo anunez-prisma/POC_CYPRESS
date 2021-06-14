@@ -1,0 +1,21 @@
+{
+	"reporter": "mochawesome",
+	"reporterOptions": {
+		"reportDir": "results",
+		"overwrite": false,
+		"html": false,
+		"json": true
+	},
+	"env": {
+		"THROUGH_API_GATEWAY": true,
+		"WS_GATEWAY": "http://apis-internal-tp-qa.prismamp.com",
+		"PORTAL_GATEWAY": "https://portal-tp-qa.prismamp.com",
+		"MONGODB_URL": "mongodb://wapp-qapm009:27017/?readPreference=primary&appname=MongoDB%20Compass&ssl=false",
+		"WS_ENDPOINT_LOGIN": "/oauth2/private/v1/token",
+		"PORTAL_EDPOINT_LOGIN": "/app/#login",
+		"FORMS_CARD_NAME": "CYPRESS TEST QA"
+	},
+	"chromeWebSecurity": false,
+	"viewportWidth": 1900,
+	"viewportHeight": 1000
+}

@@ -1,0 +1,32 @@
+{
+  "name": "apitest",
+  "version": "1.0.0",
+  "description": "Api Test Example",
+  "main": "index.js",
+  "scripts": {
+    "start": "reports/delete-report.sh && cypress open -C cypress.json",
+    "start-qa": "export NODE_ENV=qa && reports/delete-report.sh && cypress open -C cypress-qa.json",
+    "start-qa-report": "export NODE_ENV=qa && reports/delete-report.sh && cypress run -C cypress-qa.json --reporter mochawesome",
+    "report": "./reports/generate-report.sh"
+  },
+  "author": "annunez",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^7.3.0",
+    "mocha": "^8.2.1",
+    "mochawesome": "^6.2.1",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.1.0",
+    "mongodb": "^3.6.9",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "form-data": "^3.0.0",
+    "js-base64": "^3.6.0",
+    "xml2js": "^0.4.23",
+    "nodemailer": "^6.4.17",
+    "mocha-junit-reporter": "^2.0.0",
+    "junit-report-merger": "^2.0.0"
+  }
+}
